@@ -1,0 +1,30 @@
+@import "../styles/colors.scss";
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  td,
+  th {
+    border: 1px solid #999;
+    padding: 10px 20px;
+  }
+  td {
+    text-align: center;
+    transition: all 0.2s;
+    background: #f7f7f7;
+    &.disabled {
+      opacity: 0.5;
+    }
+    &:hover:not(.disabled) {
+      background: #eee;
+      cursor: pointer;
+    }
+  }
+  .active {
+    color: $primary-color;
+    font-weight: bold;
+  }
+  .selected {
+    color: #189f43;
+  }
+}

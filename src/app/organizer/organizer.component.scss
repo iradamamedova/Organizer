@@ -1,0 +1,22 @@
+@import "../styles/colors.scss";
+section {
+  border: 1px solid #999;
+  padding: 20px;
+  header {
+    margin-bottom: 20px;
+  }
+  hr {
+    border: none;
+    border-bottom: 1px solid $light-color;
+    margin-top: 5px;
+  }
+
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+}
